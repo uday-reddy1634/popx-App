@@ -12,13 +12,18 @@ function Login() {
 
   const isFormValid = email.trim() && password.trim()
 
-  const handleSubmit = event => {
+ const handleSubmit = event => {
     event.preventDefault()
     if (isFormValid) {
+      // 1. Grab any existing user data first
+      const existingData = JSON.parse(localStorage.getItem('userData') || '{}')
+
+      // 2. Save the data, keeping the old name if it exists!
       localStorage.setItem('userData', JSON.stringify({
-        fullName: 'PopX User', 
+        fullName: existingData.fullName || 'PopX User', 
         email: email           
       }))
+      
       navigate('/profile')
     }
   }
