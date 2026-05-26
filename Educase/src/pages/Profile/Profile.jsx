@@ -3,9 +3,9 @@ import './Profile.css'
 
 function Profile() {
   const [user, setUser] = useState({
-    fullName: 'Marry Doe',
-    email: 'Marry@gmail.com'
-  })
+    fullName: "The Name They Typed",
+    email: "the_email@they_typed.com"
+  });
 
   useEffect(() => {
     document.title = 'Account Settings - PopX'
