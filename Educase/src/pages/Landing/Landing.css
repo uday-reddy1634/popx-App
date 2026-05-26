@@ -1,0 +1,11 @@
+.landing-panel {
+  justify-content: flex-end;
+  padding-bottom: 34px;
+}
+
+.action-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}

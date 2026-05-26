@@ -1,0 +1,39 @@
+.signup-panel {
+  padding-top: 22px;
+  padding-bottom: 16px;
+}
+
+.signup-panel .headline-row h1 {
+  font-size: 28px;
+  line-height: 1.2;
+  max-width: 220px;
+  margin-bottom: 0;
+}
+
+.signup-panel .form-grid {
+  margin-top: 22px;
+  gap: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.signup-panel .field-group input {
+  height: 42px;
+  font-size: 14px;
+}
+
+.signup-panel .field-group span {
+  font-size: 12px;
+}
+
+.signup-panel .primary-btn {
+  margin-top: auto;
+  height: 46px;
+  font-size: 15px;
+}
+
+.signup-panel .footer-link {
+  display: none;
+}

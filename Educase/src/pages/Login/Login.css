@@ -1,0 +1,15 @@
+.login-btn {
+  background: #cbcbcb;
+  color: white;
+  transition: background-color 200ms ease;
+}
+
+.login-btn.active {
+  background: #6c25ff;
+  color: white;
+}
+
+.login-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
