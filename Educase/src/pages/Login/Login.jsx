@@ -15,14 +15,10 @@ function Login() {
   const handleSubmit = event => {
     event.preventDefault()
     if (isFormValid) {
-      
-      // 1. Save the data to localStorage before navigating!
       localStorage.setItem('userData', JSON.stringify({
-        fullName: 'PopX User', // Placeholder since Login doesn't ask for a name
-        email: email           // This grabs the exact email they typed into the box!
+        fullName: 'PopX User', 
+        email: email           
       }))
-
-      // 2. Now navigate to the profile
       navigate('/profile')
     }
   }
